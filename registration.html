@@ -1453,6 +1453,13 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(()=>{
       const regNo = 'CNA-' + new Date().getFullYear() + '-' + Math.floor(100000 + Math.random()*899999);
       localStorage.setItem('cna_reg_number', regNo);
+       try{
+  const list=JSON.parse(localStorage.getItem('cna_registrations')||'[]');
+  const d=JSON.parse(localStorage.getItem('cna_reg_details')||'{}');
+  list.push({...d, reg_no:regNo, paid:249, submitted_at:new Date().toISOString()});
+  localStorage.setItem('cna_registrations',JSON.stringify(list));
+}catch(e){}
+       
       document.getElementById('regNoDisplay').textContent = regNo;
       btn.textContent = 'Pay ₹249 & Get Registration Number';
       btn.disabled = false;
