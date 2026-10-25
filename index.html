@@ -1564,7 +1564,18 @@ body.loading{overflow:hidden;}
 </div>
 </div>
 </footer>
-<a aria-label="Chat on WhatsApp" class="wa-float" data-msg="Hi CareerNext Academy, I'd like to know more about your programs." href="#"><svg fill="currentColor" height="18" viewbox="0 0 32 32" width="18"><path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.65 4.55 1.78 6.43L3 29l7.75-2.7a12.9 12.9 0 0 0 5.27 1.12h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9h-.01a10.86 10.86 0 0 1-5.53-1.51l-.4-.24-4.6 1.6 1.63-4.48-.26-.46a10.83 10.83 0 0 1-1.67-5.79c0-5.99 4.87-10.86 10.86-10.86 2.9 0 5.63 1.13 7.68 3.18a10.78 10.78 0 0 1 3.18 7.67c0 5.99-4.87 10.89-10.88 10.89zm5.96-8.16c-.33-.16-1.94-.96-2.24-1.07-.3-.11-.52-.16-.74.16-.22.33-.85 1.07-1.04 1.29-.19.22-.38.24-.71.08-.33-.16-1.38-.51-2.63-1.63-.97-.87-1.63-1.94-1.82-2.26-.19-.33-.02-.5.14-.67.15-.15.33-.38.5-.57.16-.19.22-.33.33-.55.11-.22.05-.41-.03-.57-.08-.16-.74-1.78-1.01-2.44-.27-.64-.54-.55-.74-.56-.19-.01-.41-.01-.63-.01-.22 0-.57.08-.87.41-.3.33-1.14 1.11-1.14 2.71 0 1.6 1.17 3.14 1.33 3.36.16.22 2.3 3.51 5.57 4.92.78.34 1.39.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.94-.79 2.21-1.56.27-.76.27-1.42.19-1.56-.08-.14-.3-.22-.63-.38z"></path></svg></a>
+<!-- Email Floating Button -->
+<a href="mailto:Contact@Cnextacademy.com"
+   id="emailFloatingButton"
+   aria-label="Email Cnext Academy">
+   ✉
+</a>
+
+<script>
+document.getElementById("emailFloatingButton").addEventListener("click", function () {
+    window.location.href = "mailto:Contact@Cnextacademy.com";
+});
+</script>
 <script>// ============================================================
 // CareerNext Academy — shared interactions
 // ============================================================
